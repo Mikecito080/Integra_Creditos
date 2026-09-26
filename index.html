@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Integra Créditos | Soluciones de crédito a tu alcance</title>
+<meta name="description" content="Integra Créditos te acompaña en el proceso de solicitar información sobre alternativas de financiación, de forma simple, rápida y transparente.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Integra Créditos | Soluciones de crédito a tu alcance">
+<meta property="og:description" content="Conoce las alternativas de financiación de Integra Créditos y solicita información en minutos.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+
+    <a href="#inicio" class="logo" aria-label="Integra Créditos - Inicio">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="38" height="38" xmlns="http://www.w3.org/2000/svg">
+          <path class="logo__arc logo__arc--a" d="M8 30 C8 16, 22 10, 34 16" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+          <path class="logo__arc logo__arc--b" d="M40 18 C40 32, 26 38, 14 32" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+          <circle class="logo__dot" cx="24" cy="24" r="3.4" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="logo__text">Integra<strong>Créditos</strong></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegación principal">
+      <ul class="nav__list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#faq">Preguntas frecuentes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar entre modo claro y oscuro" aria-pressed="false">
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="12" cy="12" r="4.2"/>
+          <path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/>
+        </svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/>
+        </svg>
+      </button>
+
+      <a href="#contacto" class="btn btn--primary btn--sm header__cta">Solicitar información</a>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- overlay for mobile menu -->
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main id="inicio">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title">El crédito que necesitas, de forma simple y transparente.</h1>
+        <p class="hero__text">
+          Integra Créditos te ayuda a conocer alternativas de financiación adaptadas a tu situación.
+          Cuéntanos qué necesitas y te acompañamos durante todo el proceso, sin letra pequeña ni promesas vacías.
+        </p>
+        <div class="hero__actions">
+          <a href="#contacto" class="btn btn--primary btn--lg">Solicitar información</a>
+          <button class="btn btn--outline btn--lg" id="heroWhatsapp" type="button">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.4 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.4C8.4 21.5 10.2 22 12 22c5.5 0 10-4.4 10-10S17.5 2 12 2Zm0 18.1c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.1 8.1 0 1 1 20.1 12c0 4.5-3.6 8.1-8.1 8.1Zm4.4-6.1c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.1 0-.3 0-.4-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.4 3.9 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"/></svg>
+            Hablar por WhatsApp
+          </button>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <svg viewBox="0 0 420 420" class="hero__svg" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="210" cy="210" r="160" class="hv-ring hv-ring--1"/>
+          <circle cx="210" cy="210" r="118" class="hv-ring hv-ring--2"/>
+          <g class="hv-nodes">
+            <line x1="210" y1="92" x2="210" y2="52" class="hv-link"/>
+            <line x1="313" y1="150" x2="349" y2="128" class="hv-link"/>
+            <line x1="313" y1="270" x2="349" y2="292" class="hv-link"/>
+            <line x1="210" y1="328" x2="210" y2="368" class="hv-link"/>
+            <line x1="107" y1="270" x2="71" y2="292" class="hv-link"/>
+            <line x1="107" y1="150" x2="71" y2="128" class="hv-link"/>
+
+            <circle cx="210" cy="52" r="10" class="hv-node"/>
+            <circle cx="349" cy="128" r="10" class="hv-node"/>
+            <circle cx="349" cy="292" r="10" class="hv-node"/>
+            <circle cx="210" cy="368" r="10" class="hv-node"/>
+            <circle cx="71" cy="292" r="10" class="hv-node"/>
+            <circle cx="71" cy="128" r="10" class="hv-node"/>
+          </g>
+          <circle cx="210" cy="210" r="46" class="hv-core"/>
+          <path class="hv-check" d="M190 210 l14 14 l28 -30" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="trust" aria-label="Puntos clave del servicio">
+    <div class="container trust__grid">
+      <div class="trust__item">
+        <span class="trust__num">1 a 1</span>
+        <span class="trust__label">Atención personalizada</span>
+      </div>
+      <div class="trust__item">
+        <span class="trust__num">3 pasos</span>
+        <span class="trust__label">Proceso sencillo</span>
+      </div>
+      <div class="trust__item">
+        <span class="trust__num">Ágil</span>
+        <span class="trust__label">Respuesta rápida</span>
+      </div>
+      <div class="trust__item">
+        <span class="trust__num">A tu medida</span>
+        <span class="trust__label">Soluciones flexibles</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POR QUÉ INTEGRA ============ -->
+  <section class="section" id="nosotros">
+    <div class="container">
+      <div class="section__head">
+        <h2>¿Por qué Integra Créditos?</h2>
+        <p>Acompañamos cada solicitud con claridad, desde el primer contacto hasta la última respuesta.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="feature-card">
+          <span class="feature-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.4"/><path d="M4.5 20c1-3.6 4-5.6 7.5-5.6s6.5 2 7.5 5.6"/></svg>
+          </span>
+          <h3>Atención personalizada</h3>
+          <p>Recibe orientación durante todo el proceso, de parte de un asesor real.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16M4 12l5-5M4 12l5 5"/></svg>
+          </span>
+          <h3>Proceso sencillo</h3>
+          <p>Realiza tu solicitud de forma clara, sin trámites innecesarios.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
+          </span>
+          <h3>Respuesta rápida</h3>
+          <p>Obtén información sobre las alternativas disponibles en poco tiempo.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="6" width="17" height="13" rx="2"/><path d="M3.5 10.5h17M8 15h4"/></svg>
+          </span>
+          <h3>Transparencia</h3>
+          <p>Conoce las condiciones disponibles antes de tomar cualquier decisión.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="section section--alt" id="servicios">
+    <div class="container">
+      <div class="section__head">
+        <h2>Soluciones de crédito</h2>
+        <p>Alternativas de financiación pensadas para distintos momentos y necesidades.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <span class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M6 8c0-2 2-3 6-3s6 1 6 3-2 3-6 3-6 1-6 3 2 3 6 3 6-1 6-3"/></svg>
+          </span>
+          <h3>Crédito personal</h3>
+          <p>Financiación pensada para cubrir necesidades personales de forma flexible.</p>
+          <a href="#contacto" class="service-card__link">Más información
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card">
+          <span class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V9l8-5 8 5v12M9 21v-6h6v6"/></svg>
+          </span>
+          <h3>Crédito para proyectos</h3>
+          <p>Impulsa un proyecto personal o familiar con una alternativa a tu medida.</p>
+          <a href="#contacto" class="service-card__link">Más información
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card">
+          <span class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.4-9.5-9C.7 8.4 3 4.5 7 4.5c2 0 3.5 1 5 2.7 1.5-1.7 3-2.7 5-2.7 4 0 6.3 3.9 4.5 7.5C19 16.6 12 21 12 21Z"/></svg>
+          </span>
+          <h3>Crédito para necesidades específicas</h3>
+          <p>Soluciones puntuales para situaciones que requieren una respuesta rápida.</p>
+          <a href="#contacto" class="service-card__link">Más información
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="service-card">
+          <span class="service-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+          </span>
+          <h3>Alternativas de financiación</h3>
+          <p>Conoce distintas opciones y elige la que mejor se ajuste a tu situación.</p>
+          <a href="#contacto" class="service-card__link">Más información
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CÓMO FUNCIONA ============ -->
+  <section class="section" id="proceso">
+    <div class="container">
+      <div class="section__head">
+        <h2>Cómo funciona</h2>
+        <p>Un proceso claro, de principio a fin.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="steps__item">
+          <span class="steps__num">01</span>
+          <h3>Cuéntanos qué necesitas</h3>
+          <p>Completa el formulario o escríbenos por WhatsApp con tu solicitud.</p>
+        </li>
+        <li class="steps__item">
+          <span class="steps__num">02</span>
+          <h3>Analizamos tu solicitud</h3>
+          <p>Un asesor revisa tu caso para identificar las alternativas disponibles.</p>
+        </li>
+        <li class="steps__item">
+          <span class="steps__num">03</span>
+          <h3>Te presentamos las alternativas</h3>
+          <p>Recibes información clara sobre las opciones que aplican a tu caso.</p>
+        </li>
+        <li class="steps__item">
+          <span class="steps__num">04</span>
+          <h3>Continúas con acompañamiento</h3>
+          <p>Avanzas en el proceso con el apoyo de nuestro equipo en cada paso.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ BENEFICIOS ============ -->
+  <section class="section section--dark-band" id="beneficios">
+    <div class="container benefits">
+      <div class="benefits__text">
+        <h2>Beneficios de trabajar con nosotros</h2>
+        <ul class="benefits__list">
+          <li>Atención personalizada en cada etapa</li>
+          <li>Proceso claro, sin sorpresas</li>
+          <li>Acompañamiento durante toda la solicitud</li>
+          <li>Información transparente sobre cada alternativa</li>
+          <li>Atención digital, desde donde estés</li>
+        </ul>
+      </div>
+      <div class="benefits__visual" aria-hidden="true">
+        <svg viewBox="0 0 320 320" class="benefits__svg">
+          <rect x="30" y="180" width="46" height="110" rx="6" class="bv-bar bv-bar--1"/>
+          <rect x="100" y="130" width="46" height="160" rx="6" class="bv-bar bv-bar--2"/>
+          <rect x="170" y="90" width="46" height="200" rx="6" class="bv-bar bv-bar--3"/>
+          <rect x="240" y="50" width="46" height="240" rx="6" class="bv-bar bv-bar--4"/>
+          <path d="M40 175 L120 122 L190 84 L260 44" class="bv-line" fill="none" stroke-width="3"/>
+          <circle cx="260" cy="44" r="7" class="bv-dot"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section__head">
+        <h2>Preguntas frecuentes</h2>
+        <p>Resolvemos las dudas más comunes sobre el proceso.</p>
+      </div>
+
+      <div class="accordion" id="accordion">
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" aria-expanded="false">
+              ¿Cómo puedo solicitar información?
+              <svg class="accordion__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel">
+            <p>Puedes completar el formulario de contacto de esta página o escribirnos directamente por WhatsApp. Un asesor se pondrá en contacto contigo.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" aria-expanded="false">
+              ¿Qué requisitos necesito?
+              <svg class="accordion__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel">
+            <p>Los requisitos dependen del tipo de solicitud. Al contactarnos, un asesor te indicará qué información necesitas preparar.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" aria-expanded="false">
+              ¿Cuánto tarda el proceso?
+              <svg class="accordion__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel">
+            <p>Los tiempos varían según cada caso. Nuestro objetivo es darte una respuesta lo más rápido posible una vez recibamos tu solicitud.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" aria-expanded="false">
+              ¿Puedo realizar la solicitud en línea?
+              <svg class="accordion__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel">
+            <p>Sí. Puedes iniciar tu solicitud completamente en línea a través del formulario de esta página, sin necesidad de desplazarte.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__trigger" aria-expanded="false">
+              ¿Cómo puedo comunicarme con Integra Créditos?
+              <svg class="accordion__chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="accordion__panel">
+            <p>Puedes escribirnos por WhatsApp, enviarnos un correo o completar el formulario de contacto. Elige la vía que más se ajuste a ti.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ANTES DEL FORMULARIO ============ -->
+  <section class="cta-band">
+    <div class="container cta-band__inner">
+      <h2>¿Quieres conocer tus opciones?</h2>
+      <p>Déjanos tus datos y uno de nuestros asesores se pondrá en contacto contigo.</p>
+      <div class="cta-band__actions">
+        <a href="#contacto" class="btn btn--primary btn--lg">Quiero que me contacten</a>
+        <p class="cta-band__or">O escríbenos directamente por
+          <button class="link-btn" id="ctaWhatsapp" type="button">WhatsApp</button>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO / FORMULARIO ============ -->
+  <section class="section" id="contacto">
+    <div class="container contact">
+      <div class="section__head section__head--left">
+        <h2>Solicita información</h2>
+        <p>Completa el formulario y un asesor de Integra Créditos se comunicará contigo.</p>
+      </div>
+
+      <form class="form" id="contactForm" novalidate>
+
+        <div class="form__row">
+          <label for="fullName">Nombre completo</label>
+          <input type="text" id="fullName" name="fullName" autocomplete="name" aria-describedby="err-fullName">
+          <span class="form__error" id="err-fullName" role="alert"></span>
+        </div>
+
+        <div class="form__row form__row--half">
+          <div>
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="err-phone">
+            <span class="form__error" id="err-phone" role="alert"></span>
+          </div>
+          <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="err-email">
+            <span class="form__error" id="err-email" role="alert"></span>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <label for="reason">Tipo de crédito / motivo de contacto</label>
+          <select id="reason" name="reason" aria-describedby="err-reason">
+            <option value="">Selecciona una opción</option>
+            <option value="personal">Crédito personal</option>
+            <option value="proyecto">Crédito para proyectos</option>
+            <option value="especifico">Necesidad específica</option>
+            <option value="otro">Otro / no estoy seguro</option>
+          </select>
+          <span class="form__error" id="err-reason" role="alert"></span>
+        </div>
+
+        <div class="form__row">
+          <label for="amount">Monto aproximado de interés <span class="form__optional">(opcional)</span></label>
+          <input type="text" id="amount" name="amount" placeholder="Ej: $2.000.000">
+        </div>
+
+        <div class="form__row">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="4" aria-describedby="err-message"></textarea>
+          <span class="form__error" id="err-message" role="alert"></span>
+        </div>
+
+        <div class="form__row form__checkbox">
+          <input type="checkbox" id="consent" name="consent" aria-describedby="err-consent">
+          <label for="consent">Acepto el tratamiento de mis datos personales de acuerdo con la política de privacidad.</label>
+          <span class="form__error" id="err-consent" role="alert"></span>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--lg form__submit">
+          <span class="form__submit-text">Solicitar información</span>
+        </button>
+
+        <p class="form__success" id="formSuccess" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+
+    <div class="footer__brand">
+      <a href="#inicio" class="logo logo--footer" aria-label="Integra Créditos - Inicio">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="34" height="34" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 30 C8 16, 22 10, 34 16" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+            <path d="M40 18 C40 32, 26 38, 14 32" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="24" cy="24" r="3.4" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="logo__text">Integra<strong>Créditos</strong></span>
+      </a>
+      <p class="footer__desc">Te ayudamos a conocer alternativas de financiación de forma simple, clara y transparente.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#faq">Preguntas frecuentes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contacto</h4>
+      <ul>
+        <!-- TODO: Reemplazar con información real de la empresa -->
+        <li><button class="link-btn" id="footerWhatsapp" type="button">WhatsApp: +57 300 000 0000</button></li>
+        <li><a href="mailto:correo@integracreditos.com">correo@integracreditos.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Legal</h4>
+      <ul>
+        <!-- TODO: Reemplazar con enlaces reales -->
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="container footer__bottom">
+    <p>&copy; <span id="year"></span> Integra Créditos. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOTANTE ============ -->
+<button class="whatsapp-fab" id="whatsappFab" type="button" aria-label="Escríbenos por WhatsApp">
+  <span class="whatsapp-fab__tooltip">Escríbenos por WhatsApp</span>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.4 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.4C8.4 21.5 10.2 22 12 22c5.5 0 10-4.4 10-10S17.5 2 12 2Zm0 18.1c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.1 8.1 0 1 1 20.1 12c0 4.5-3.6 8.1-8.1 8.1Zm4.4-6.1c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.1 0-.3 0-.4-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.4 3.9 3.4.5.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
